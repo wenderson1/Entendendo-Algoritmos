@@ -1,6 +1,5 @@
 ﻿
-using System.ComponentModel;
-
+#region Pesquisa Binária
 static int? pesquisaBinaria(int[] vetor, int valor)
 {
     int baixo = 0;
@@ -26,3 +25,4 @@ static int? pesquisaBinaria(int[] vetor, int valor)
 int[] lista = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
 Console.WriteLine(pesquisaBinaria(lista, 3));
 Console.WriteLine(pesquisaBinaria(lista, -1) is null ? "Não encontrado" : pesquisaBinaria(lista, -1).ToString());
+#endregion
